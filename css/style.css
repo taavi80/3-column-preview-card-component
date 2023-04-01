@@ -1,0 +1,112 @@
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--Very-light-gray);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  max-width: 375px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+.card img {
+  order: -1;
+  width: 29%;
+}
+
+h1 {
+  color: var(--Very-light-gray);
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin: 1.3rem 0;
+}
+
+p {
+  max-width: 230px;
+  color: var(--Transparent-white);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+button {
+  width: 63%;
+  background-color: var(--Very-light-gray);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.9px;
+  padding: 0.9rem 0;
+  border: 2px solid var(--Very-light-gray);
+  border-radius: 25px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.sedans button:hover,
+.suvs button:hover,
+.luxury button:hover {
+  color: var(--Very-light-gray);
+}
+
+.sedans {
+  background-color: var(--Bright-orange);
+}
+
+.sedans button {
+  color: var(--Bright-orange);
+}
+
+.sedans button:hover {
+  background-color: var(--Bright-orange);
+}
+
+.suvs {
+  background-color: var(--Dark-cyan);
+}
+
+.suvs button {
+  color: var(--Dark-cyan);
+}
+
+.suvs button:hover {
+  background-color: var(--Dark-cyan);
+}
+
+.luxury {
+  background-color: var(--Very-dark-cyan);
+}
+
+.luxury button {
+  color: var(--Very-dark-cyan);
+}
+
+.luxury button:hover {
+  background-color: var(--Very-dark-cyan);
+}
