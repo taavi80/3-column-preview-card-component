@@ -75,7 +75,8 @@ button:hover {
   color: var(--Very-light-gray);
 }
 
-.sedans {
+.sedans,
+.sedans button:hover {
   background-color: var(--Bright-orange);
 }
 
@@ -83,11 +84,8 @@ button:hover {
   color: var(--Bright-orange);
 }
 
-.sedans button:hover {
-  background-color: var(--Bright-orange);
-}
-
-.suvs {
+.suvs,
+.suvs button:hover {
   background-color: var(--Dark-cyan);
 }
 
@@ -95,11 +93,8 @@ button:hover {
   color: var(--Dark-cyan);
 }
 
-.suvs button:hover {
-  background-color: var(--Dark-cyan);
-}
-
-.luxury {
+.luxury,
+.luxury button:hover {
   background-color: var(--Very-dark-cyan);
 }
 
@@ -107,6 +102,18 @@ button:hover {
   color: var(--Very-dark-cyan);
 }
 
-.luxury button:hover {
-  background-color: var(--Very-dark-cyan);
+@media (min-width: 1440px) {
+  main {
+    max-width: 900px;
+    display: flex;
+  }
+  .card {
+    padding: 2.8rem;
+  }
+  p {
+    margin-bottom: 4rem;
+  }
+  button {
+    width: 71%;
+  }
 }
